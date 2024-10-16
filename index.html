@@ -9,20 +9,53 @@
 </head>
 
 <body>
-    <!-- <div class="container">
+    <div class="container">
         <h1 id="hh" class="hh">Welcome to my website</h1>
         <button id="btn" onclick="rev()" class="btn">I know the basics</button>
     </div>
 
-    making a roll dice
+    <!-- making a roll dice -->
+
     <div class="container1">
         <h1 id="hh1" class="hh1">Roll the dice</h1>
         <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus recusandae
             molestiae.</p>
-        <audio src="sound.mp3" id="dice-audio"></audio>
+        <audio src="sound.mp3" min="0" max="1" value="0.5" id="dice-audio"></audio>
         <div id="dice" class="dice">0</div>
         <button id="btn1" onclick="roll()" class="btn1">Roll the dice</button>
-    </div> -->
+    </div>
+
+    <!-- box creation button -->
+
+    <div class="container2">
+        <h1 id="hh2" class="hh2">Create the boxes</h1>
+        <p class="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia necessitatibus recusandae
+            molestiae.</p>
+        <button id="btn2" onclick="create()" class="btn2">Create box</button>
+    </div>
+
+    <div id="boxContainer" class="box-container">
+
+    </div>
+
+
+    <div class="container3">
+        <h1 class="">Add enrolled users</h1>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa harum doloremque?</p>
+        <div class="flex">
+            <input id="name" type="text" class="nng" placeholder="Enter name ">
+            <input id="email" type="email" class="nng" placeholder="Enter email">
+        </div>
+        <button id="btn3" onclick="addUser()" class="btn3">Add User</button>
+    </div>
+
+    <div class="users-container" id="abb">
+        <div id="data" class="user">
+            <p>name</p>
+            <p>email</p>
+        </div>
+
+    </div>
 
 
 
