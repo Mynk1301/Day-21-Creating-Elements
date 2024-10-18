@@ -132,14 +132,26 @@ body{
 
 }
 .nng{
-  padding:4px 8px;
+  padding:10px 12px;
   outline:none;
-
-
+  border-radius:10px;
+  border:1px solid lightgray;
 }
 
 .users-container{
-  width:50vw;
-  background-color: black;
+  width:400px;
   color:white;
+  margin:auto;
+}
+
+.user{
+  display:flex;
+  gap:20px;
+  text-align: center;
+  color:black;
+  border:1px solid rgba(0, 183, 255, 0.699);
+  border-radius:10px;
+  padding:0 10px;
+  margin-bottom:10px;
+  background-color:rgba(0, 162, 255, 0.144);
 }

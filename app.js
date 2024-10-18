@@ -40,6 +40,26 @@ create = () => {
 // adding names and email stuff
 
 let users = [];
+let users_container = document.getElementById('users-container')      //getting element from the html file
+
+function renderUsers(){
+    users.forEach((user)=>{
+    let div = document.createElement('div');      //creating element to show up on the screen
+    let name = document.createElement('p');       //creating element to show up on the screen
+    let email = document.createElement('p');      //creating element to show up on the screen
+    div.classList.add('user');         //adding css class to the div
+
+
+    name.innerText=user.name;            //importing values
+    email.innerText=user.email;          //importing values
+    users_container.appendChild(div);    //combining the js element into html container
+    div.appendChild(name);               //combining the values to the js div
+    div.appendChild(email);          //combining the values to the js div
+    })
+}
+
+
+
 addUser = () => {
     let name = document.getElementById('name');
     let email = document.getElementById('email');
@@ -48,6 +68,9 @@ addUser = () => {
         name: name.value,
         email: email.value,
     }
+
     users.push(user);       //adding the user data into users array ==> array of objects
-    console.log(users);
+
+    renderUsers();      //creating another fn for the ease of the code
+
 }
